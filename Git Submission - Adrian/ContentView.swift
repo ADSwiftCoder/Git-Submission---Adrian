@@ -9,13 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        ZStack {
+            Color (.blue) .edgesIgnoringSafeArea(.all)
+            VStack  {
+                Image(systemName: "PIC")
+                    .frame(width: 50, height: 50, alignment: .center)
+                
+                                        Text("Hi there, This is Adrian . I am really excited to complete my app and publish it on the app store. My GitHub ID is @ADSwiftCoder")
+                                            .foregroundColor(.green)
+                                            .padding()
+                                            .multilineTextAlignment(.center)
+                                            .bold()
+                                            .italic()
+                                            .offset(y:100)
+                                        
+                }
+            }
     }
 }
 
@@ -24,3 +33,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
